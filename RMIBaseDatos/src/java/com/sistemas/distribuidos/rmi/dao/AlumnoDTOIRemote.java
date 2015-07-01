@@ -26,5 +26,5 @@ public interface AlumnoDTOIRemote extends Remote {
 
     public List<AlumnoDTO> findAll() throws RemoteException;
 
-    public List<AlumnoDTO> findByName(String criteria) throws RemoteException;
+    public List<AlumnoDTO> findByMatricula(String criteria) throws RemoteException;
 }
