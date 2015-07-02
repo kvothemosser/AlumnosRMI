@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.sistemas.distribuidos.rmi.dao;
 
 import java.sql.Connection;
@@ -33,13 +28,10 @@ public class DataBaseManager {
         return conexion;
     }
 
-    /**
-     * Connection to MySQL Database
-     */
     private static Connection getMySQLConnection() {
         Connection con = null;
         try {
-            String strCon = "jdbc:mysql://127.0.0.1/test?user=rtuser&password=123";
+            String strCon = "jdbc:mysql://127.0.0.1/distribuida?user=rtuser&password=123";
             con = DriverManager.getConnection(strCon);
         } catch (SQLException se) {
             System.out.println(se);
